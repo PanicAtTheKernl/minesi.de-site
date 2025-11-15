@@ -28,15 +28,6 @@
         padding: 0;
     }
 
-    .header img {
-      width: 100%;
-      height: auto;
-      max-height: 200px; 
-      object-fit: contain;
-      display: block;
-  }
-
-
     .container {
         max-width: 700px;
         margin: 50px auto;
@@ -44,11 +35,17 @@
         padding: 40px;
     }
 
+    .inner-header img {
+        width: 100%;
+        height: auto;
+        max-height: 120px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+
     h1 {
-        text-align: center;
-        font-size: 36px;
-        margin: 0 0 30px 0;
-        color: #5edb6b;
+        display: none; /* we aren't using an H1 here */
     }
 
     .nav {
@@ -89,32 +86,26 @@
     a:hover {
         text-decoration: underline;
     }
-
-    .discord {
-        text-align: center;
-        margin: 40px 0;
-    }
 </style>
 </head>
 
 <body>
 
-    <!-- HEADER IMAGE -->
-    <div class="header">
-        <img src="https://i.postimg.cc/jdTVQyBX/file(1).png" alt="Header Image">
-    </div>
-
-    <!-- MAIN CONTENT CONTAINER -->
     <div class="container">
 
-        <h1></h1>
+        <!-- LOGO INSIDE THE CONTAINER -->
+        <div class="inner-header">
+            <img src="https://i.postimg.cc/jdTVQyBX/file(1).png" alt="Minesi Logo">
+        </div>
 
+        <!-- NAVIGATION -->
         <div class="nav">
             <a href="https://map.minesi.de/">Server Map</a>
             <a href="https://discord.minesi.de/">Discord</a>
             <a href="https://donate.minesi.de/">Donate</a>
         </div>
 
+        <!-- CONTENT -->
         <h2>Welcome to Minesi.de!</h2>
 
         <hr>
@@ -137,7 +128,7 @@
 
         <p><b>Player-Driven Experience:</b> No admin-run shops or spawn builds. Want a shopping district? Build one. Want community farms? Organize it with others. The world is shaped entirely by its players.</p>
 
-    </div> <!-- END CONTAINER -->
+    </div>
 
 </body>
 </html>
